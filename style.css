@@ -1,16 +1,19 @@
 /* style.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #444;
+    color: #fff;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: center; 
     padding: 2em;
+    position: relative;
 }
 
 #projects {
@@ -20,9 +23,18 @@ header {
     padding: 2em;
 }
 
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: auto; /* Center the picture horizontally */
+    display: block; /* Adjust the display property */
+}
+
 .project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #222;
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 1.5em;
     margin: 1em;
@@ -31,16 +43,23 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 .project-card:hover {
     transform: scale(1.05);
 }
 
 .project-card h2 {
-    color: #333;
+    color: #fff;
 }
 
 .project-card p {
-    color: #555;
+    color: #ddd;
 }
 
 .project-card a {
@@ -55,15 +74,17 @@ header {
     color: #2980b9;
 }
 
-/* Animation for header */
 header h1,
 header p {
     animation: fadeInUp 1s ease-in-out;
 }
 
-/* Animation for project cards */
 .project-card {
     animation: fadeIn 1s ease-in-out;
+}
+
+.profile-picture {
+    animation: fadeInUp 1s ease-in-out;
 }
 
 @keyframes fadeIn {
