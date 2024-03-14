@@ -74,6 +74,15 @@ header {
     color: #2980b9;
 }
 
+.header-content {
+    pointer-events: none;
+}
+
+.header-content img {
+    pointer-events: auto;
+}
+
+
 header h1,
 header p {
     animation: fadeInUp 1s ease-in-out;
